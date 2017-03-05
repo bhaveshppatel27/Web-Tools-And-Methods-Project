@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cinema</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Dollar!2727</property>
+
+
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- second level cache -->
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+
+		<mapping class="com.cinema.pojo.Customer" />
+		<mapping class="com.cinema.pojo.Actor" />
+		<mapping class="com.cinema.pojo.Actress" />
+		<mapping class="com.cinema.pojo.Director" />
+		<mapping class="com.cinema.pojo.Movie" />
+		<mapping class="com.cinema.pojo.Person" />
+		<mapping class="com.cinema.pojo.Ticket" />
+		<mapping class="com.cinema.pojo.Genre" />
+		<mapping class="com.cinema.pojo.Budget" />
+		<mapping class="com.cinema.pojo.Location" />
+		<mapping class="com.cinema.pojo.Theatre" />
+		<mapping class="com.cinema.pojo.Auditorium" />
+		<mapping class="com.cinema.pojo.ShowTimings" />
+		<mapping class="com.cinema.pojo.BankAccount" />
+		<mapping class="com.cinema.pojo.TheatreAdmin" />
+	</session-factory>
+</hibernate-configuration>

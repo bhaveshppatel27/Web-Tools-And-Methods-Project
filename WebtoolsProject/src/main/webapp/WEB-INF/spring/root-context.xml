@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="customerValidator" class="com.cinema.controller.CustomerValidator"></bean>
+	<bean id="movieValidator" class="com.cinema.controller.MovieValidator"></bean>
+	<bean id="theatreValidator" class="com.cinema.controller.TheatreValidator"></bean>
+	<bean id="showTimingsValidator" class="com.cinema.controller.ShowTimingsValidator"></bean>
+	<bean id="auditoriumDAO" class="com.cinema.dao.AuditoriumDAO"></bean>
+	<bean id="movieDAO" class="com.cinema.dao.MovieDAO"></bean>
+	<bean id="theatreDAO" class="com.cinema.dao.TheatreDAO"></bean>
+	<bean id="showTimingsDAO" class="com.cinema.dao.ShowTimingsDAO"></bean>
+	<bean id="actorDAO" class="com.cinema.dao.ActorDAO"></bean>
+	<bean id="actressDAO" class="com.cinema.dao.ActressDAO"></bean>
+	<bean id="directorDAO" class="com.cinema.dao.DirectorDAO"></bean>
+	<bean id="customerDAO" class="com.cinema.dao.CustomerDAO"></bean>
+	<bean id="genreDAO" class="com.cinema.dao.GenreDAO"></bean>
+	<bean id="locationDAO" class="com.cinema.dao.LocationDAO"></bean>
+	<bean id="ticketDAO" class="com.cinema.dao.TicketDAO"></bean>
+	<bean id="bankAccountDAO" class="com.cinema.dao.BankAccountDAO"></bean>
+	<bean id="theatreAdminDAO" class="com.cinema.dao.TheatreAdminDAO"></bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	
+	
+</beans>

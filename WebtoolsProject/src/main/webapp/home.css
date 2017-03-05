@@ -1,0 +1,150 @@
+@CHARSET "ISO-8859-1";
+
+@import
+	url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css")
+	body
+	{
+	background-color:
+	#CCC;
+
+}
+
+/*Navbar start */
+#header {
+	margin-right: 400px;
+}
+
+#headerbutton {
+	display: inline;
+}
+/* Navbar end */
+
+/* Tabs after carousal start */
+#row2 {
+	margin-top: 10px;
+}
+
+.tabs {
+	border-bottom: solid 2px #ffcb05;
+	width: 100%;
+	display: inline-block;
+}
+
+.list-unstyled {
+	list-style: none;
+	padding-left: 0;
+}
+
+#tabsul {
+	margin-top: 0;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#tabsul li {
+	float: left;
+	display: list-item;
+}
+
+#tabsul li a.active {
+	color: #212121;
+	font-weight: bold;
+	background: #ffcb05;
+	border-color: #ffcb05;
+}
+
+#tabsul li a {
+	padding: 8px 15px;
+	display: inline-block;
+	color: #474747;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	border: solid 1px #FFF;
+	border-bottom: none;
+	border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	text-decoration: none;
+}
+
+/* Tabs after carousal end */
+
+/* Quick booking start */
+#sidebookingbar {
+	border: 2px solid #ffcb05;
+	height: 400px;
+	width: 340px;
+}
+
+.booking {
+	margin-top: 16px !important;
+	width: 300px !important;
+}
+
+.book {
+	background: #212121;
+	display: inline-block;
+	height: 32px;
+	width: 100%;
+	color: #ffcb05;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	letter-spacing: .5px;
+	margin-top: 16px;
+	text-decoration: none !important;
+}
+
+.book:hover {
+	color: #fff;
+	text-decoration: none !important;
+}
+
+.quickbook {
+	background: #ffcb05;
+	line-height: 30px;
+	margin: 0;
+	width: font-size: 16px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 0 8px;
+	text-align: center;
+}
+/* Quick booking end */
+
+/* View More Start */
+.more {
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+	margin-top: 5px;
+}
+.more:hover{
+	color: #fff;
+	text-decoration: none !important; 
+	
+}
+.more a {
+    background: #000;
+    width: 100%;
+    text-align: center;
+    color: #ffcb05;
+    border: none;
+    padding: 7px 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    display: inline-block;
+}
+
+/* View More End */
+@media only screen and (max-width: 1200px) {
+    #sidebookingbar {
+        display: none;
+    }
+}
+
